@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+p {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  text-align: start;
+}
+small {
+  font-size: 12px;
+}
+.row {
+  display: flex;
+}
