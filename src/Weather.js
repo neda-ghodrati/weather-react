@@ -76,35 +76,50 @@ export default function Form() {
             <div className="col-2">
               {" "}
               Sat
-              <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" />
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png "
+                alt=""
+              />
               <br />
               18 °c
             </div>
             <div className="col-2">
               {" "}
               Sun{" "}
-              <img src="https://ssl.gstatic.com/onebox/weather/48/rain.png" />
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/rain.png"
+                alt=""
+              />
               <br />
               12 °c
             </div>
             <div className="col-2">
               {" "}
               Mon
-              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" />
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+                alt=""
+              />
               <br />
               14 °c
             </div>
             <div className="col-2">
               {" "}
               Tue{" "}
-              <img src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png" />
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt=""
+              />
               <br />
               13 °c
             </div>
             <div className="col-2">
               {" "}
               Wed{" "}
-              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" />
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png"
+                alt=""
+              />
               <br />
               14 °c
             </div>
