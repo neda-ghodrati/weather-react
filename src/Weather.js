@@ -47,29 +47,38 @@ export default function Form() {
         <br />
 
         <strong> {city}</strong>
-        <ul>
-          <li>
-            {" "}
-            <strong>Temperature:</strong> {Math.round(weather.temperature)} °C
-          </li>
-          <li>
-            {" "}
-            <strong>Description:</strong> {weather.description}{" "}
-          </li>
-          <li>
-            {" "}
-            <strong>Humidity: </strong>
-            {Math.round(weather.humidity)} %{" "}
-          </li>
-          <li>
-            {" "}
-            <strong>Wind:</strong> {Math.round(weather.wind)} km/h
-          </li>
-          <li>
-            {" "}
-            <img src={weather.icon} alt="Weather Icon" rel="noreferrer" />{" "}
-          </li>
-        </ul>
+        <div class="overview">
+          <h1 id="city"></h1>
+          <ul>
+            <li>
+              Last updated: <span id="date"> Tue 21:00</span>
+            </li>
+          </ul>
+        </div>
+
+        <div className="col-6">
+          <ul>
+            <li> {weather.description} </li>
+          </ul>
+        </div>
+        <div className="row">
+          <div className="col-7">
+            <div className="clearfix weather-temperature">
+              <strong>{Math.round(weather.temperature)} °C</strong>
+              <img
+                src={weather.icon}
+                alt="Weather Icon"
+                rel="noreferrer"
+              />{" "}
+            </div>
+          </div>
+          <div className="col-5">
+            <ul>
+              <li> Humidity: {Math.round(weather.humidity)} % </li>
+              <li> Wind: {Math.round(weather.wind)} km/h</li>
+            </ul>
+          </div>
+        </div>
         <div className="container">
           <div className="row">
             <div className="col-2">
@@ -131,7 +140,7 @@ export default function Form() {
           target="_blank"
           rel="noreferrer"
         >
-          Open-Source code
+          Open-Source code,
         </a>
         by N.Gh.T
       </small>

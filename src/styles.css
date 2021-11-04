@@ -13,10 +13,15 @@ ul {
   margin-left: 0;
   padding: 0;
   text-align: start;
+  color: rgb(99, 96, 96);
 }
 small {
   font-size: 12px;
 }
 .row {
   display: flex;
+}
+.clearfix .weather-temperature {
+  font-size: 70px;
+  font-weight: bold;
 }
