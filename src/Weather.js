@@ -3,10 +3,9 @@ import axios from "axios";
 import "./styles.css";
 export default function Form() {
   let [city, setCity] = useState("");
-  let [loaded, setLoaded] = useState(false);
+
   let [weather, setWeather] = useState({});
   function showInfo(response) {
-    setLoaded(true);
     setWeather({
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
