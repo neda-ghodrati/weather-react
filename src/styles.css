@@ -21,7 +21,11 @@ small {
 .row {
   display: flex;
 }
-.clearfix .weather-temperature {
-  font-size: 70px;
-  font-weight: bold;
+
+h1 {
+  text-align: left;
+}
+.tempfigure {
+  font-size: 50px;
+  text-align: left;
 }

@@ -45,10 +45,8 @@ export default function Form() {
           </form>
         </div>
         <br />
-
-        <strong> {city}</strong>
         <div class="overview">
-          <h1 id="city"></h1>
+          <h1 id="city"> {city}</h1>
           <ul>
             <li>
               Last updated: <span id="date"> Tue 21:00</span>
@@ -60,12 +58,10 @@ export default function Form() {
         <div className="row">
           <div className="col-7">
             <div className="clearfix weather-temperature">
-              <strong>{Math.round(weather.temperature)} °C</strong>
-              <img
-                src={weather.icon}
-                alt="Weather Icon"
-                rel="noreferrer"
-              />{" "}
+              <strong className="tempfigure">
+                {Math.round(weather.temperature)} °C
+              </strong>
+              <img src={weather.icon} alt="Weather Icon" rel="noreferrer" />{" "}
             </div>
           </div>
           <div className="col-5">
