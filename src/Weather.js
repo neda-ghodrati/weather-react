@@ -53,14 +53,10 @@ export default function Form() {
             <li>
               Last updated: <span id="date"> Tue 21:00</span>
             </li>
-          </ul>
-        </div>
-
-        <div className="col-6">
-          <ul>
             <li> {weather.description} </li>
           </ul>
         </div>
+
         <div className="row">
           <div className="col-7">
             <div className="clearfix weather-temperature">
