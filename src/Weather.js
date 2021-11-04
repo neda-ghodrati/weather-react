@@ -45,13 +45,13 @@ export default function Form() {
           </form>
         </div>
         <br />
-        <div class="overview">
+        <div className="overview">
           <h1 id="city"> {city}</h1>
           <ul>
             <li>
               Last updated: <span id="date"> Tue 21:00</span>
             </li>
-            <li> {weather.description} </li>
+            <li className="text-capitalize"> {weather.description} </li>
           </ul>
         </div>
 
